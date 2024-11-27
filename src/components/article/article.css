@@ -1,0 +1,131 @@
+.article{
+    border: 1px solid red;
+    background-color:rgba(255, 255, 255, 1) ;
+    width: 941px;
+    height: 140px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px 16px;
+
+    display: grid;
+    grid-template-rows: 28px 20px  auto ;
+    grid-template-columns: auto auto 1fr ;
+
+    grid-template-areas: 
+    'area0 area1 area3 '
+    'area2 area2 area3 '
+    'area4 area4 area4 '
+    ;
+    column-gap: 14px;
+    row-gap: 4px;
+
+}
+
+.title-article{
+    /* border: 1px solid red; */
+    color:rgba(24, 144, 255, 1);
+    font-size: 400;
+    line-height: 28px;
+    height: 28px;
+    grid-area: area0;  
+}
+
+.favorites{
+    /* border: 1px solid red; */
+    width: 34px;
+    height: 22px;
+    grid-area: area1;  
+    display: flex;
+    align-items: center;
+    gap:4px;
+    align-self: center;
+    cursor: pointer;
+  
+}
+
+
+.heart{
+    background-image: url('./heart.svg');    
+    width: 16px;
+    height: 16px;
+
+}
+
+.number{
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 12px;
+    
+}
+
+.tags{
+    display: flex ;
+    
+    gap: 8px;
+    grid-area: area2;  
+}
+
+.tag{
+  color: rgba(0, 0, 0, 0.5);  
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 2px 4px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+
+}
+.text {
+    /* border: 1px solid red; */
+    width: 682px;
+    height: 45px;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 400;
+    color:rgba(0, 0, 0, 0.75);
+    grid-area: area4;  
+    
+}
+
+.author{
+    position: relative;
+    display: inline-block;
+    height: 46px;
+    display: grid;
+    column-gap: 12px;
+    grid-template-rows: auto auto  ;
+    grid-template-columns: auto 46px ;
+
+    grid-template-areas: 
+    'area0 area1 '
+    'area2 area1 '
+    ;
+    grid-area: area3; 
+    justify-self: end;
+}
+
+.username {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 18px;
+    font-weight: 400;
+    height: 28px;
+    grid-area: area0;   
+}
+
+.createdAt{
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    grid-area: area2;  
+}
+
+.img-user{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    grid-area: area1;  
+}
