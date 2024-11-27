@@ -1,9 +1,13 @@
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
 
 .app {
     background-color: rgba(235, 238, 243, 1);
     width: 1440px;
     height: 977px;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    
 }
 
 /* :where(.css-dev-only-do-not-override-tpassh).ant-pagination .ant-pagination-item{
