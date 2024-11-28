@@ -4,16 +4,16 @@ import { Pagination } from "antd";
 import Header from "../header";
 import ListOfArticles from "../listOfArticles";
 
-import './app.css'
+import classes from'./app.module.scss'
 import '../normalize.css'
 
 function  App () {
 
 
   return(
-    <div className="app">
+    <div className={classes.app}>
       <Header />
-      <div className="main">
+      <div className={classes.main}>
         <ListOfArticles />
         <Pagination 
           defaultCurrent={1}

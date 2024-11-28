@@ -1,17 +1,17 @@
 import React from "react";
 
-import './header.css'
+import classes from'./header.module.scss'
 
 function Header () {
 
   return (
-    <div className="header">
-      <span className="">
+    <div className={classes.header}>
+      <span className= {classes["neme-blog"]}>
         Realworld Blog
       </span>
-      <div className="header-right-menu">
-        <button className="sign-in">Sign In</button>
-        <button className="sing-up">Sign Up</button>
+      <div className= {classes["header-right-menu"]} >
+        <button className= {classes["sign-in"]}>Sign In</button>
+        <button className= {classes["sing-up"]}>Sign Up</button>
       </div>
     </div>
   )

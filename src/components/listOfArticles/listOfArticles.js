@@ -1,21 +1,29 @@
 import React from "react";
 
-import Article from "../article";
+import ArticleSmall from "../article-small";
+import ArticleLong from "../article-long";
 
-import './listOfArticles.css'
+import classes from './listOfArticles.module.scss'
 
 function ListOfArticles () {
 
-  return (
-    <div className="list-of-articles">
-        
-      <Article />
+  const switcher = 0
 
-      <Article />
-      <Article />
-      <Article />
-      <Article />
+  const show = switcher ? <ArticleSmall />  : <ArticleLong />
+
+
+  return (
+    <div className={classes["list-of-articles"]}>
         
+      {/* <ArticleSmall />
+
+      <ArticleSmall />
+      <ArticleSmall />
+      <ArticleSmall />
+      <ArticleSmall /> */}
+
+      {/* <ArticleLong /> */}
+      {show}        
     </div>
   )
 }
