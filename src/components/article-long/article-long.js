@@ -1,34 +1,40 @@
-import React from "react";
+// import React from "react";
 
-import './article-long.module.scss'
-import unknownUser from '../article-small/unknownUser.png'
+import Markdown from 'react-markdown';
+
+
+import unknownUser from '../image/unknownUser.png'
+
+import classes from './article-long.module.scss'
 
 function ArticleLong (){
 
   return(
-    <div className="article">
-      <h5 className="title-article">Some article title</h5>
-      <div className="favorites">
-        <div className="heart"></div>
-        <span className="number">12</span>
+    <div className={classes.article}>
+      <h5 className={classes["title-article"]}>Some article title</h5>
+      <div className= {classes.favorites}>
+        <div className= {classes.heart}></div>
+        <span className= {classes.number}>12</span>
       </div>
-      <div className="tags">
-        <span className="tag">Tag 1</span>
-        <div className="tag">Some tag</div>
+      <div className= {classes.tags}>
+        <span className= {classes.tag}>Tag 1</span>
+        <div className= {classes.tag}>Some tag</div>
       </div>
-      <div className="text">Lorem ipsum dolor sit amet, consectetur 
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <div className= {classes.text}>Lorem ipsum dolor sit amet, consectetur 
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </div>
 
-      <div className="author">
-        <h6 className="username">John Doe</h6>
-        <div className="createdAt">March 5, 2020</div>
-        <img className="img-user" src={unknownUser} alt="img"></img>
-        
+      <div className= {classes.author}>
+        <h6 className= {classes.username}>John Doe</h6>
+        <div className= {classes.createdAt}>March 5, 2020</div>
+        <img className={classes["img-user"]} src={unknownUser} alt="img"></img>
+      
       </div>
-      <pre>Est Ampyciden pater patent
+
+  
+      <Markdown className='description'>Est Ampyciden pater patent
 Amor saxa inpiger
 Lorem markdownum Stygias neque is referam fudi, breve per. Et Achaica tamen: nescia ista occupat, illum se ad potest humum et.
 
@@ -43,7 +49,21 @@ Ulli labore facta. Io cervis non nosterque nullae, vides: aethere Delphice subit
   3. Paris includere etiam tamen
   4. Superi te putria imagine Deianira
   5. Tremore hoste Esse sed perstat capillis siqua
-      </pre>
+
+  **жирный**  
+__жирный__
+
+~~зачеркнутый~~
+
+Кор*рек*тно, кор**рек**тно, кор***рек***тно
+
+Некор_рек_тно, некор__рек__тно, некор___рек___тно
+
+      <u>Подчёркнутый текст</u>
+
+- [x] Отмеченный пункт
+- [ ] Неотмеченный пункт
+      </Markdown>
 
     </div>
   )

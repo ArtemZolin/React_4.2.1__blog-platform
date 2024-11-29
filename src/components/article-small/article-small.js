@@ -1,6 +1,7 @@
 import React from "react";
 
-import unknownUser from './unknownUser.png'
+import unknownUser from "../image/unknownUser.png"
+
 import classes from './article-small.module.scss'
 
 function ArticleSmall () {

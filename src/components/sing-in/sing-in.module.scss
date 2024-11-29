@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.sing-in{
+    font-family: "Roboto", sans-serif;
+    width: 384px;
+    height: 374px;
+    padding: 48px 32px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid red;
+    
+
+}
+
+.title{
+    font-size: 20px;
+    color:rgba(38, 38, 38, 1);
+}
+
+.form{
+    border: 1px solid red;
+    width: 320px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.name{
+    width: 320px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    border:1px solid rgba(217, 217, 217, 1);
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 12px;
+}
+::placeholder {
+    color: rgba(191, 191, 191, 1);
+    font-size: 16px;
+  }
+
+.text{
+    font-size: 14px ;
+    font-weight: 400;
+    color: rgba(38, 38, 38, 1);
+}
+
+.agreement{
+    width: 320px;
+    border-top: 1px solid rgba(232, 232, 232, 1);
+    padding-top: 8px;
+}
+
+.label{
+    border: 1px solid red;
+    font-size: 14px ;
+    width: 254px;
+    height: 44px;
+    display: flex;
+    align-items: start;
+    gap:8px;
+
+}
+
+
+.create{
+    border: 1px solid red;
+    width: 319px;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px
+}
+
+.button-create{
+    background-color: rgba(24, 144, 255, 1);
+    width: 319px;
+    height: 40px;
+    border-radius: 4px;
+    color:rgba(255, 255, 255, 1);
+    font-size: 16px;
+}
+
+.text-sing{
+    text-align: center;
+    font-size: 12px;
+    color:rgba(140, 140, 140, 1);
+}
+
+.input1{
+    width: 16px;
+    height: 16px;
+    font-size: 16px
+}
